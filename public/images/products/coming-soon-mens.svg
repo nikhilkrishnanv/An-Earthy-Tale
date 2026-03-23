@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="600" height="800" viewBox="0 0 600 800">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="50%" y2="100%">
+      <stop offset="0%" stop-color="#7A8A7E"/>
+      <stop offset="100%" stop-color="#5A6A5E"/>
+    </linearGradient>
+    <linearGradient id="overlay" x1="0%" y1="60%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#3D2817" stop-opacity="0"/>
+      <stop offset="100%" stop-color="#2C3E36" stop-opacity="0.6"/>
+    </linearGradient>
+  </defs>
+  <rect width="600" height="800" fill="url(#bg)"/>
+  <g transform="translate(300,350) rotate(0) scale(1.5)">
+    <path d="M0-60C-30-40,-40 0,-20 30C-10 50,0 60,0 60S10 50,20 30C40 0,30-40,0-60Z" fill="#FAF5ED" opacity="0.08"/>
+    <path d="M0 60V-30" stroke="#FAF5ED" stroke-width="1.5" opacity="0.1" stroke-linecap="round"/>
+    <path d="M0-10C-12-18,-18-14,-22-6" stroke="#FAF5ED" stroke-width="1" opacity="0.08" fill="none" stroke-linecap="round"/>
+    <path d="M0 10C12 2,18 6,22 14" stroke="#FAF5ED" stroke-width="1" opacity="0.08" fill="none" stroke-linecap="round"/>
+  </g><line x1="576" y1="262" x2="605" y2="282" stroke="#FAF5ED" stroke-width="0.5" opacity="0.07"/><line x1="103" y1="78" x2="90" y2="70" stroke="#FAF5ED" stroke-width="0.5" opacity="0.05"/><line x1="470" y1="264" x2="463" y2="260" stroke="#FAF5ED" stroke-width="0.5" opacity="0.05"/><line x1="268" y1="667" x2="303" y2="678" stroke="#FAF5ED" stroke-width="0.5" opacity="0.08"/><line x1="460" y1="576" x2="441" y2="575" stroke="#FAF5ED" stroke-width="0.5" opacity="0.06"/><line x1="391" y1="617" x2="417" y2="604" stroke="#FAF5ED" stroke-width="0.5" opacity="0.05"/><line x1="516" y1="700" x2="546" y2="740" stroke="#FAF5ED" stroke-width="0.5" opacity="0.07"/><line x1="240" y1="95" x2="240" y2="130" stroke="#FAF5ED" stroke-width="0.5" opacity="0.06"/><line x1="331" y1="599" x2="329" y2="622" stroke="#FAF5ED" stroke-width="0.5" opacity="0.06"/><line x1="579" y1="373" x2="559" y2="371" stroke="#FAF5ED" stroke-width="0.5" opacity="0.08"/><line x1="442" y1="481" x2="431" y2="458" stroke="#FAF5ED" stroke-width="0.5" opacity="0.07"/><line x1="482" y1="21" x2="474" y2="-17" stroke="#FAF5ED" stroke-width="0.5" opacity="0.08"/><line x1="291" y1="663" x2="277" y2="654" stroke="#FAF5ED" stroke-width="0.5" opacity="0.06"/><line x1="304" y1="226" x2="287" y2="261" stroke="#FAF5ED" stroke-width="0.5" opacity="0.06"/><line x1="220" y1="344" x2="238" y2="307" stroke="#FAF5ED" stroke-width="0.5" opacity="0.08"/><line x1="398" y1="594" x2="380" y2="586" stroke="#FAF5ED" stroke-width="0.5" opacity="0.07"/><line x1="12" y1="479" x2="12" y2="497" stroke="#FAF5ED" stroke-width="0.5" opacity="0.04"/><line x1="210" y1="378" x2="176" y2="344" stroke="#FAF5ED" stroke-width="0.5" opacity="0.06"/><line x1="304" y1="643" x2="330" y2="625" stroke="#FAF5ED" stroke-width="0.5" opacity="0.07"/><line x1="492" y1="88" x2="471" y2="126" stroke="#FAF5ED" stroke-width="0.5" opacity="0.04"/>
+  <rect width="600" height="800" fill="url(#overlay)"/>
+  <text x="300" y="720" text-anchor="middle" font-family="Georgia,serif" font-size="28" fill="#FAF5ED" font-weight="600">Men's Hemp Shirts</text>
+  <text x="300" y="752" text-anchor="middle" font-family="system-ui,sans-serif" font-size="16" fill="#D4C5A9">Coming Soon</text>
+</svg>

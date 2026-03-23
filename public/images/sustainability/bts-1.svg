@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="600" height="450" viewBox="0 0 600 450">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#7A9A5E"/>
+      <stop offset="100%" stop-color="#5A7A3E"/>
+    </linearGradient>
+    <linearGradient id="overlay" x1="0%" y1="60%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#3D2817" stop-opacity="0"/>
+      <stop offset="100%" stop-color="#2C3E36" stop-opacity="0.5"/>
+    </linearGradient>
+  </defs>
+  <rect width="600" height="450" fill="url(#bg)"/>
+  <line x1="318" y1="32" x2="315" y2="7" stroke="#FAF5ED" stroke-width="0.5" opacity="0.04"/><line x1="42" y1="277" x2="72" y2="242" stroke="#FAF5ED" stroke-width="0.5" opacity="0.05"/><line x1="117" y1="220" x2="87" y2="210" stroke="#FAF5ED" stroke-width="0.5" opacity="0.03"/><line x1="411" y1="16" x2="426" y2="-22" stroke="#FAF5ED" stroke-width="0.5" opacity="0.04"/><line x1="558" y1="402" x2="559" y2="428" stroke="#FAF5ED" stroke-width="0.5" opacity="0.06"/><line x1="101" y1="235" x2="81" y2="252" stroke="#FAF5ED" stroke-width="0.5" opacity="0.06"/><line x1="492" y1="166" x2="453" y2="192" stroke="#FAF5ED" stroke-width="0.5" opacity="0.04"/><line x1="330" y1="252" x2="309" y2="267" stroke="#FAF5ED" stroke-width="0.5" opacity="0.07"/><line x1="417" y1="327" x2="404" y2="293" stroke="#FAF5ED" stroke-width="0.5" opacity="0.05"/><line x1="182" y1="66" x2="176" y2="68" stroke="#FAF5ED" stroke-width="0.5" opacity="0.03"/><line x1="22" y1="364" x2="54" y2="331" stroke="#FAF5ED" stroke-width="0.5" opacity="0.05"/><line x1="205" y1="397" x2="230" y2="432" stroke="#FAF5ED" stroke-width="0.5" opacity="0.06"/><line x1="241" y1="187" x2="256" y2="221" stroke="#FAF5ED" stroke-width="0.5" opacity="0.05"/><line x1="163" y1="236" x2="201" y2="251" stroke="#FAF5ED" stroke-width="0.5" opacity="0.05"/><line x1="385" y1="178" x2="354" y2="218" stroke="#FAF5ED" stroke-width="0.5" opacity="0.07"/><line x1="499" y1="191" x2="526" y2="210" stroke="#FAF5ED" stroke-width="0.5" opacity="0.06"/><line x1="452" y1="193" x2="449" y2="188" stroke="#FAF5ED" stroke-width="0.5" opacity="0.05"/><line x1="92" y1="219" x2="64" y2="250" stroke="#FAF5ED" stroke-width="0.5" opacity="0.06"/><line x1="484" y1="326" x2="465" y2="348" stroke="#FAF5ED" stroke-width="0.5" opacity="0.03"/><line x1="149" y1="86" x2="137" y2="108" stroke="#FAF5ED" stroke-width="0.5" opacity="0.03"/><g transform="translate(300,200) rotate(0) scale(1.2)">
+    <path d="M0-60C-30-40,-40 0,-20 30C-10 50,0 60,0 60S10 50,20 30C40 0,30-40,0-60Z" fill="#FAF5ED" opacity="0.08"/>
+    <path d="M0 60V-30" stroke="#FAF5ED" stroke-width="1.5" opacity="0.1" stroke-linecap="round"/>
+    <path d="M0-10C-12-18,-18-14,-22-6" stroke="#FAF5ED" stroke-width="1" opacity="0.08" fill="none" stroke-linecap="round"/>
+    <path d="M0 10C12 2,18 6,22 14" stroke="#FAF5ED" stroke-width="1" opacity="0.08" fill="none" stroke-linecap="round"/>
+  </g><circle cx="380.0" cy="225.0" r="3.9" fill="#FAF5ED" opacity="0.09"/><circle cx="356.6" cy="281.6" r="8.4" fill="#FAF5ED" opacity="0.05"/><circle cx="300.0" cy="305.0" r="4.4" fill="#FAF5ED" opacity="0.10"/><circle cx="243.4" cy="281.6" r="7.5" fill="#FAF5ED" opacity="0.06"/><circle cx="220.0" cy="225.0" r="3.5" fill="#FAF5ED" opacity="0.09"/><circle cx="243.4" cy="168.4" r="7.3" fill="#FAF5ED" opacity="0.10"/><circle cx="300.0" cy="145.0" r="8.9" fill="#FAF5ED" opacity="0.05"/><circle cx="356.6" cy="168.4" r="3.9" fill="#FAF5ED" opacity="0.09"/>
+  <rect width="600" height="450" fill="url(#overlay)"/>
+  <text x="300" y="390" text-anchor="middle" font-family="Georgia,serif" font-size="24" fill="#FAF5ED" font-weight="600">Fabric Sourcing</text>
+  <text x="300" y="418" text-anchor="middle" font-family="system-ui,sans-serif" font-size="14" fill="#D4C5A9">Behind the scenes</text>
+</svg>

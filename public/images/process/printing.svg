@@ -1,0 +1,55 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="600" viewBox="0 0 800 600">
+  <defs>
+    <linearGradient id="print-bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#5A8A5E"/>
+      <stop offset="100%" stop-color="#4A7A4E"/>
+    </linearGradient>
+    <linearGradient id="print-overlay" x1="0%" y1="60%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#2C3E36" stop-opacity="0"/>
+      <stop offset="100%" stop-color="#2C3E36" stop-opacity="0.55"/>
+    </linearGradient>
+  </defs>
+  <rect width="800" height="600" fill="url(#print-bg)"/>
+  <!-- Large fern center -->
+  <g transform="translate(400,260) scale(2.2)">
+    <path d="M0 80V-60" stroke="#FAF5ED" stroke-width="2" opacity="0.15" stroke-linecap="round"/>
+    <path d="M0-50 C-25-65,-35-55,-20-45" stroke="#FAF5ED" stroke-width="1.4" opacity="0.12" fill="none" stroke-linecap="round"/>
+    <path d="M0-30 C25-45,35-35,20-25" stroke="#FAF5ED" stroke-width="1.4" opacity="0.12" fill="none" stroke-linecap="round"/>
+    <path d="M0-10 C-25-25,-35-15,-20-5" stroke="#FAF5ED" stroke-width="1.4" opacity="0.12" fill="none" stroke-linecap="round"/>
+    <path d="M0 10 C25-5,35 5,20 15" stroke="#FAF5ED" stroke-width="1.4" opacity="0.12" fill="none" stroke-linecap="round"/>
+    <path d="M0 30 C-25 15,-35 25,-20 35" stroke="#FAF5ED" stroke-width="1.4" opacity="0.10" fill="none" stroke-linecap="round"/>
+    <path d="M0 50 C25 35,35 45,20 55" stroke="#FAF5ED" stroke-width="1.4" opacity="0.10" fill="none" stroke-linecap="round"/>
+  </g>
+  <!-- Leaf top-left -->
+  <g transform="translate(180,180) rotate(30) scale(1.6)">
+    <path d="M0-60C-30-40,-40 0,-20 30C-10 50,0 60,0 60S10 50,20 30C40 0,30-40,0-60Z" fill="#FAF5ED" opacity="0.12"/>
+    <path d="M0 60V-30" stroke="#FAF5ED" stroke-width="1.5" opacity="0.15" stroke-linecap="round"/>
+    <path d="M0-10 C-12-18,-18-14,-22-6" stroke="#FAF5ED" stroke-width="1" opacity="0.10" fill="none" stroke-linecap="round"/>
+    <path d="M0 10 C12 2,18 6,22 14" stroke="#FAF5ED" stroke-width="1" opacity="0.10" fill="none" stroke-linecap="round"/>
+  </g>
+  <!-- Leaf bottom-right -->
+  <g transform="translate(620,340) rotate(-20) scale(1.4)">
+    <path d="M0-60C-30-40,-40 0,-20 30C-10 50,0 60,0 60S10 50,20 30C40 0,30-40,0-60Z" fill="#FAF5ED" opacity="0.12"/>
+    <path d="M0 60V-30" stroke="#FAF5ED" stroke-width="1.5" opacity="0.15" stroke-linecap="round"/>
+    <path d="M0-10 C-12-18,-18-14,-22-6" stroke="#FAF5ED" stroke-width="1" opacity="0.10" fill="none" stroke-linecap="round"/>
+    <path d="M0 10 C12 2,18 6,22 14" stroke="#FAF5ED" stroke-width="1" opacity="0.10" fill="none" stroke-linecap="round"/>
+  </g>
+  <!-- Small fern right -->
+  <g transform="translate(620,180) rotate(15) scale(1.1)">
+    <path d="M0 80V-60" stroke="#FAF5ED" stroke-width="2" opacity="0.12" stroke-linecap="round"/>
+    <path d="M0-50 C-25-65,-35-55,-20-45" stroke="#FAF5ED" stroke-width="1.2" opacity="0.10" fill="none" stroke-linecap="round"/>
+    <path d="M0-30 C25-45,35-35,20-25" stroke="#FAF5ED" stroke-width="1.2" opacity="0.10" fill="none" stroke-linecap="round"/>
+    <path d="M0-10 C-25-25,-35-15,-20-5" stroke="#FAF5ED" stroke-width="1.2" opacity="0.10" fill="none" stroke-linecap="round"/>
+    <path d="M0 10 C25-5,35 5,20 15" stroke="#FAF5ED" stroke-width="1.2" opacity="0.10" fill="none" stroke-linecap="round"/>
+  </g>
+  <!-- Scattered small flower impressions -->
+  <circle cx="120" cy="420" r="18" fill="#FAF5ED" opacity="0.06"/>
+  <circle cx="130" cy="410" r="10" fill="#FAF5ED" opacity="0.08"/>
+  <circle cx="680" cy="120" r="14" fill="#FAF5ED" opacity="0.06"/>
+  <circle cx="340" cy="480" r="12" fill="#FAF5ED" opacity="0.05"/>
+  <circle cx="520" cy="100" r="16" fill="#FAF5ED" opacity="0.05"/>
+  <!-- Overlay -->
+  <rect width="800" height="600" fill="url(#print-overlay)"/>
+  <text x="400" y="540" text-anchor="middle" font-family="Georgia,serif" font-size="24" fill="#FAF5ED" font-weight="600">Botanical Printing</text>
+  <text x="400" y="568" text-anchor="middle" font-family="system-ui,sans-serif" font-size="14" fill="#D4C5A9">Real leaves &amp; flowers pressed into fabric</text>
+</svg>

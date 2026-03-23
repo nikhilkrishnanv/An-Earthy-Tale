@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="600" viewBox="0 0 800 600">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#6A5A8A"/>
+      <stop offset="100%" stop-color="#8A6A5A"/>
+    </linearGradient>
+    <linearGradient id="overlay" x1="0%" y1="60%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#3D2817" stop-opacity="0"/>
+      <stop offset="100%" stop-color="#2C3E36" stop-opacity="0.5"/>
+    </linearGradient>
+  </defs>
+  <rect width="800" height="600" fill="url(#bg)"/>
+  <path d="M0 180 Q200 160,400 180 T800 180" stroke="#FAF5ED" stroke-width="1" opacity="0.04" fill="none"/><path d="M0 220 Q200 205,400 220 T800 220" stroke="#FAF5ED" stroke-width="1" opacity="0.05" fill="none"/><path d="M0 260 Q200 250,400 260 T800 260" stroke="#FAF5ED" stroke-width="1" opacity="0.06" fill="none"/><path d="M0 300 Q200 295,400 300 T800 300" stroke="#FAF5ED" stroke-width="1" opacity="0.07" fill="none"/><path d="M0 340 Q200 340,400 340 T800 340" stroke="#FAF5ED" stroke-width="1" opacity="0.08" fill="none"/><circle cx="500.0" cy="300.0" r="7.7" fill="#FAF5ED" opacity="0.04"/><circle cx="480.9" cy="358.8" r="6.7" fill="#FAF5ED" opacity="0.04"/><circle cx="430.9" cy="395.1" r="5.0" fill="#FAF5ED" opacity="0.05"/><circle cx="369.1" cy="395.1" r="6.2" fill="#FAF5ED" opacity="0.07"/><circle cx="319.1" cy="358.8" r="5.4" fill="#FAF5ED" opacity="0.04"/><circle cx="300.0" cy="300.0" r="7.9" fill="#FAF5ED" opacity="0.06"/><circle cx="319.1" cy="241.2" r="8.5" fill="#FAF5ED" opacity="0.06"/><circle cx="369.1" cy="204.9" r="6.5" fill="#FAF5ED" opacity="0.09"/><circle cx="430.9" cy="204.9" r="6.1" fill="#FAF5ED" opacity="0.09"/><circle cx="480.9" cy="241.2" r="4.8" fill="#FAF5ED" opacity="0.06"/><circle cx="580.0" cy="300.0" r="7.6" fill="#FAF5ED" opacity="0.04"/><circle cx="562.2" cy="378.1" r="8.3" fill="#FAF5ED" opacity="0.07"/><circle cx="512.2" cy="440.7" r="8.3" fill="#FAF5ED" opacity="0.08"/><circle cx="440.1" cy="475.5" r="6.6" fill="#FAF5ED" opacity="0.10"/><circle cx="359.9" cy="475.5" r="3.1" fill="#FAF5ED" opacity="0.05"/><circle cx="287.8" cy="440.7" r="7.2" fill="#FAF5ED" opacity="0.10"/><circle cx="237.8" cy="378.1" r="6.4" fill="#FAF5ED" opacity="0.06"/><circle cx="220.0" cy="300.0" r="4.2" fill="#FAF5ED" opacity="0.06"/><circle cx="237.8" cy="221.9" r="8.8" fill="#FAF5ED" opacity="0.05"/><circle cx="287.8" cy="159.3" r="6.4" fill="#FAF5ED" opacity="0.09"/><circle cx="359.9" cy="124.5" r="5.3" fill="#FAF5ED" opacity="0.06"/><circle cx="440.1" cy="124.5" r="7.4" fill="#FAF5ED" opacity="0.05"/><circle cx="512.2" cy="159.3" r="6.8" fill="#FAF5ED" opacity="0.06"/><circle cx="562.2" cy="221.9" r="5.9" fill="#FAF5ED" opacity="0.05"/><circle cx="310.0" cy="200.0" r="4.3" fill="#FAF5ED" opacity="0.06"/><circle cx="280.0" cy="252.0" r="7.8" fill="#FAF5ED" opacity="0.06"/><circle cx="220.0" cy="252.0" r="7.4" fill="#FAF5ED" opacity="0.09"/><circle cx="190.0" cy="200.0" r="6.6" fill="#FAF5ED" opacity="0.09"/><circle cx="220.0" cy="148.0" r="6.1" fill="#FAF5ED" opacity="0.08"/><circle cx="280.0" cy="148.0" r="5.0" fill="#FAF5ED" opacity="0.07"/>
+  <rect width="800" height="600" fill="url(#overlay)"/>
+  <text x="400" y="540" text-anchor="middle" font-family="Georgia,serif" font-size="24" fill="#FAF5ED" font-weight="600">Natural Dyeing</text>
+  <text x="400" y="568" text-anchor="middle" font-family="system-ui,sans-serif" font-size="14" fill="#D4C5A9">Plant-based pigments · Zero chemical waste</text>
+</svg>

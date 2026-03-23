@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="400" height="400" viewBox="0 0 400 400">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#5A8A76"/>
+      <stop offset="100%" stop-color="#3D6B5A"/>
+    </linearGradient>
+  </defs>
+  <rect width="400" height="400" fill="url(#bg)"/>
+  <g transform="translate(200,200) rotate(0) scale(2)">
+    <path d="M0-60C-30-40,-40 0,-20 30C-10 50,0 60,0 60S10 50,20 30C40 0,30-40,0-60Z" fill="#FAF5ED" opacity="0.08"/>
+    <path d="M0 60V-30" stroke="#FAF5ED" stroke-width="1.5" opacity="0.1" stroke-linecap="round"/>
+    <path d="M0-10C-12-18,-18-14,-22-6" stroke="#FAF5ED" stroke-width="1" opacity="0.08" fill="none" stroke-linecap="round"/>
+    <path d="M0 10C12 2,18 6,22 14" stroke="#FAF5ED" stroke-width="1" opacity="0.08" fill="none" stroke-linecap="round"/>
+  </g><line x1="223" y1="344" x2="202" y2="317" stroke="#FAF5ED" stroke-width="0.5" opacity="0.06"/><line x1="316" y1="219" x2="307" y2="185" stroke="#FAF5ED" stroke-width="0.5" opacity="0.07"/><line x1="349" y1="36" x2="350" y2="66" stroke="#FAF5ED" stroke-width="0.5" opacity="0.05"/><line x1="122" y1="264" x2="98" y2="240" stroke="#FAF5ED" stroke-width="0.5" opacity="0.06"/><line x1="289" y1="149" x2="307" y2="115" stroke="#FAF5ED" stroke-width="0.5" opacity="0.06"/><line x1="133" y1="1" x2="156" y2="-9" stroke="#FAF5ED" stroke-width="0.5" opacity="0.04"/><line x1="84" y1="283" x2="53" y2="260" stroke="#FAF5ED" stroke-width="0.5" opacity="0.05"/><line x1="41" y1="194" x2="31" y2="170" stroke="#FAF5ED" stroke-width="0.5" opacity="0.04"/><line x1="20" y1="232" x2="47" y2="269" stroke="#FAF5ED" stroke-width="0.5" opacity="0.03"/><line x1="253" y1="320" x2="292" y2="334" stroke="#FAF5ED" stroke-width="0.5" opacity="0.06"/><line x1="28" y1="396" x2="7" y2="367" stroke="#FAF5ED" stroke-width="0.5" opacity="0.06"/><line x1="235" y1="115" x2="268" y2="85" stroke="#FAF5ED" stroke-width="0.5" opacity="0.08"/><line x1="187" y1="161" x2="192" y2="180" stroke="#FAF5ED" stroke-width="0.5" opacity="0.05"/><line x1="390" y1="101" x2="426" y2="98" stroke="#FAF5ED" stroke-width="0.5" opacity="0.08"/><line x1="389" y1="104" x2="377" y2="93" stroke="#FAF5ED" stroke-width="0.5" opacity="0.07"/>
+  <text x="200" y="190" text-anchor="middle" font-family="Georgia,serif" font-size="22" fill="#FAF5ED" font-weight="600"></text>
+  <text x="200" y="220" text-anchor="middle" font-family="system-ui,sans-serif" font-size="14" fill="#FAF5ED" opacity="0.7"></text>
+</svg>

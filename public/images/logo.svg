@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" fill="none">
+  <!-- Two overlapping leaf/petal shapes inspired by the An Earthy Tale brand logo -->
+  <!-- Small leaf with fingerprint texture (left) -->
+  <path d="M85 140 C55 120, 50 80, 70 55 C80 42, 95 38, 100 65 C105 90, 100 125, 85 140Z" fill="none" stroke="#3D6B5A" stroke-width="2"/>
+  <!-- Fingerprint-like texture inside small leaf -->
+  <clipPath id="leaf-clip">
+    <path d="M85 140 C55 120, 50 80, 70 55 C80 42, 95 38, 100 65 C105 90, 100 125, 85 140Z"/>
+  </clipPath>
+  <g clip-path="url(#leaf-clip)">
+    <path d="M65 60 C70 55, 80 52, 90 58" fill="none" stroke="#3D6B5A" stroke-width="0.8" opacity="0.6"/>
+    <path d="M62 68 C70 62, 82 58, 95 65" fill="none" stroke="#3D6B5A" stroke-width="0.8" opacity="0.6"/>
+    <path d="M60 76 C68 70, 84 65, 98 72" fill="none" stroke="#3D6B5A" stroke-width="0.8" opacity="0.6"/>
+    <path d="M58 84 C68 78, 86 72, 100 80" fill="none" stroke="#3D6B5A" stroke-width="0.8" opacity="0.6"/>
+    <path d="M60 92 C70 86, 88 80, 102 88" fill="none" stroke="#3D6B5A" stroke-width="0.8" opacity="0.6"/>
+    <path d="M62 100 C72 94, 88 88, 100 96" fill="none" stroke="#3D6B5A" stroke-width="0.8" opacity="0.6"/>
+    <path d="M66 108 C74 102, 88 96, 98 104" fill="none" stroke="#3D6B5A" stroke-width="0.8" opacity="0.6"/>
+    <path d="M70 116 C78 110, 88 105, 96 112" fill="none" stroke="#3D6B5A" stroke-width="0.8" opacity="0.6"/>
+    <path d="M74 124 C80 118, 88 114, 94 120" fill="none" stroke="#3D6B5A" stroke-width="0.8" opacity="0.6"/>
+    <path d="M78 132 C82 126, 88 122, 90 128" fill="none" stroke="#3D6B5A" stroke-width="0.8" opacity="0.6"/>
+  </g>
+  <!-- Large leaf/petal (right) -->
+  <path d="M100 145 C95 135, 95 60, 115 40 C130 25, 150 35, 150 60 C150 100, 130 140, 100 145Z" fill="none" stroke="#3D6B5A" stroke-width="2"/>
+</svg>
