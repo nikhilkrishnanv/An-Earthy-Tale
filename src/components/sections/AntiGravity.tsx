@@ -6,11 +6,12 @@ import { motion, useScroll, useTransform } from "framer-motion";
 import FadeIn from "@/components/animations/FadeIn";
 
 const floatingItems = [
-  { label: "Hemp Dress", image: "/images/products/dress-1.svg", x: "10%", y: "15%", size: "w-28 h-36 sm:w-36 sm:h-48", delay: 0, speed: 6 },
-  { label: "Bamboo Top", image: "/images/products/long-shirt-2.svg", x: "65%", y: "10%", size: "w-24 h-32 sm:w-32 sm:h-44", delay: 1, speed: 7 },
-  { label: "Banana Tote", image: "/images/products/bag-2.svg", x: "35%", y: "55%", size: "w-20 h-24 sm:w-28 sm:h-32", delay: 0.5, speed: 8 },
-  { label: "Botanical Shirt", image: "/images/products/long-shirt-1.svg", x: "75%", y: "50%", size: "w-24 h-32 sm:w-32 sm:h-40", delay: 1.5, speed: 5.5 },
-  { label: "Eco Pants", image: "/images/products/bottom-1.svg", x: "20%", y: "60%", size: "w-20 h-28 sm:w-28 sm:h-36", delay: 2, speed: 7.5 },
+  { label: "Hemp Dress — Black", image: "/images/products/hemp_dresses/black/second.jpeg", delay: 0, speed: 6 },
+  { label: "Hemp Dress — Off White", image: "/images/products/hemp_dresses/off_white/second.jpeg", delay: 0.3, speed: 6.5 },
+  { label: "Eco Print Shirt", image: "/images/products/eco_print_shirt/main.JPG", delay: 1, speed: 7 },
+  { label: "Eco Print Dress", image: "/images/products/eco_print_dress/second.jpeg", delay: 0.5, speed: 8 },
+  { label: "Hemp Dress — Tan", image: "/images/products/hemp_dresses/tan/second.jpeg", delay: 2, speed: 7.5 },
+  { label: "Hemp Linen Shirt", image: "/images/products/hemp_linen_shirt_blue/main.JPG", delay: 1.5, speed: 5.5 },
 ];
 
 // Deterministic particle positions to avoid hydration mismatch
@@ -47,12 +48,7 @@ function FloatingGarment({
 
   return (
     <motion.div
-      className="absolute"
-      style={{
-        left: item.x,
-        top: item.y,
-        y: itemY,
-      }}
+      style={{ y: itemY }}
       initial={{ opacity: 0, scale: 0.8 }}
       whileInView={{ opacity: 1, scale: 1 }}
       viewport={{ once: true }}
@@ -64,8 +60,8 @@ function FloatingGarment({
     >
       <motion.div
         animate={{
-          y: [-12, 12, -12],
-          rotate: [-2, 2, -2],
+          y: [-8, 8, -8],
+          rotate: [-1.5, 1.5, -1.5],
         }}
         transition={{
           duration: item.speed,
@@ -73,23 +69,24 @@ function FloatingGarment({
           repeat: Infinity,
           ease: "easeInOut",
         }}
-        className={`group ${item.size}`}
+        className="group aspect-[3/4] w-full"
       >
-        <div className="relative h-full w-full overflow-hidden rounded-2xl shadow-lg shadow-black/20 ring-1 ring-cream/10">
+        <div className="relative h-full w-full overflow-hidden rounded-2xl shadow-xl shadow-black/30 ring-1 ring-cream/15">
           <Image
             src={item.image}
             alt={item.label}
             fill
-            className="object-cover opacity-80"
-            sizes="200px"
+            unoptimized
+            className="object-cover"
+            sizes="(max-width: 640px) 50vw, (max-width: 1024px) 33vw, 200px"
           />
-          <div className="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-bark/80 to-transparent p-3">
-            <p className="text-xs font-medium text-cream/80">
+          <div className="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-bark/90 via-bark/40 to-transparent p-3 pt-8">
+            <p className="text-xs font-semibold text-cream/90 tracking-wide">
               {item.label}
             </p>
           </div>
         </div>
-        <div className="mx-auto mt-2 h-2 w-3/4 rounded-full bg-black/10 blur-sm" />
+        <div className="mx-auto mt-3 h-3 w-3/4 rounded-full bg-black/15 blur-md" />
       </motion.div>
     </motion.div>
   );
@@ -107,7 +104,7 @@ export default function AntiGravity() {
   return (
     <section
       ref={containerRef}
-      className="relative min-h-screen overflow-hidden bg-bark py-24"
+      className="relative overflow-hidden bg-bark py-24"
     >
       {/* Background gradient */}
       <motion.div
@@ -161,8 +158,8 @@ export default function AntiGravity() {
           </div>
         </FadeIn>
 
-        {/* Floating garments area */}
-        <div className="relative mx-auto mt-16 h-[500px] max-w-5xl sm:h-[600px]">
+        {/* Floating garments grid */}
+        <div className="mx-auto mt-16 grid max-w-5xl grid-cols-2 gap-6 sm:grid-cols-3 sm:gap-8">
           {floatingItems.map((item, i) => (
             <FloatingGarment
               key={item.label}

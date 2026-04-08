@@ -93,6 +93,28 @@ export default function ProductCard({ product }: { product: Product }) {
             {product.fabric}
           </span>
         </div>
+
+        {/* Color swatches on image */}
+        {product.colors && product.colors.length > 0 && (
+          <div className="absolute right-3 top-3 flex flex-col gap-1.5">
+            {product.colors.map((variant) => (
+              <button
+                key={variant.name}
+                onClick={() => {
+                  setActiveColor(variant.name);
+                  setCurrentIndex(0);
+                }}
+                title={variant.name}
+                className={`h-6 w-6 rounded-full border-2 shadow-sm transition-all ${
+                  activeColor === variant.name
+                    ? "border-olive scale-110"
+                    : "border-white/70 hover:border-olive/60"
+                }`}
+                style={{ backgroundColor: variant.color }}
+              />
+            ))}
+          </div>
+        )}
       </div>
 
       {/* Info */}
@@ -103,29 +125,6 @@ export default function ProductCard({ product }: { product: Product }) {
         <p className="mt-1.5 text-sm leading-relaxed text-warm-gray">
           {product.description}
         </p>
-
-        {/* Color Variants */}
-        {product.colors && product.colors.length > 0 && (
-          <div className="mt-3 flex items-center gap-2">
-            <span className="text-xs text-warm-gray">Colors:</span>
-            {product.colors.map((variant) => (
-              <button
-                key={variant.name}
-                onClick={() => {
-                  setActiveColor(variant.name);
-                  setCurrentIndex(0);
-                }}
-                title={variant.name}
-                className={`h-6 w-6 rounded-full border-2 transition-all ${
-                  activeColor === variant.name
-                    ? "border-olive scale-110"
-                    : "border-transparent hover:border-olive/40"
-                }`}
-                style={{ backgroundColor: variant.color }}
-              />
-            ))}
-          </div>
-        )}
 
         {/* Highlights */}
         {product.highlights && product.highlights.length > 0 && (
