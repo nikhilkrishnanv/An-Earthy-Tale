@@ -4,7 +4,7 @@ export const BRAND = {
   subtitle: "Sustainable fashion handcrafted with love for the planet",
   description:
     "Eco-friendly, ethically made clothing using hemp, bamboo, and banana fabric. Handcrafted with botanical printing and natural dyeing techniques.",
-  email: "hello@anearthlytale.com",
+  email: "social.anearthytale@gmail.com",
   phone: "+91 9037785716",
 } as const;
 

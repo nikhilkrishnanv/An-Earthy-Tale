@@ -3,15 +3,121 @@
 import { useState } from "react";
 import Image from "next/image";
 import { motion, AnimatePresence } from "framer-motion";
-import { MessageCircle } from "lucide-react";
+import { MessageCircle, ChevronLeft, ChevronRight } from "lucide-react";
 import SectionHeading from "@/components/ui/SectionHeading";
 import ProductCard from "@/components/ui/ProductCard";
 import FadeIn from "@/components/animations/FadeIn";
 import { products, comingSoonProducts, CATEGORIES } from "@/lib/products";
+import type { Product } from "@/lib/products";
 import { WHATSAPP } from "@/lib/constants";
 import { Clock } from "lucide-react";
 
 const newProducts = products.filter((p) => p.isNew);
+
+function NewArrivalCard({ product }: { product: Product }) {
+  const defaultImages = product.images?.length ? product.images : [product.image];
+  const [currentIndex, setCurrentIndex] = useState(0);
+  const [activeColor, setActiveColor] = useState<string | null>(null);
+
+  const activeVariant = activeColor
+    ? product.colors?.find((c) => c.name === activeColor)
+    : null;
+  const allImages = activeVariant?.images?.length
+    ? activeVariant.images
+    : defaultImages;
+  const displayImage = allImages[currentIndex];
+
+  const prev = () =>
+    setCurrentIndex((i) => (i === 0 ? allImages.length - 1 : i - 1));
+  const next = () =>
+    setCurrentIndex((i) => (i === allImages.length - 1 ? 0 : i + 1));
+
+  return (
+    <div className="group relative overflow-hidden rounded-2xl border border-cream/10">
+      <div className="relative aspect-[3/4]">
+        <Image
+          src={displayImage}
+          alt={product.name}
+          fill
+          unoptimized
+          className="object-cover transition-all duration-500 group-hover:scale-105"
+          sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw"
+        />
+        <div className="absolute inset-0 bg-gradient-to-t from-bark/70 via-transparent to-transparent" />
+
+        {allImages.length > 1 && (
+          <>
+            <button
+              onClick={prev}
+              aria-label="Previous image"
+              className="absolute left-2 top-1/2 -translate-y-1/2 rounded-full bg-white/80 p-1.5 opacity-0 shadow-sm backdrop-blur-sm transition-opacity group-hover:opacity-100 hover:bg-white"
+            >
+              <ChevronLeft className="h-4 w-4 text-bark" />
+            </button>
+            <button
+              onClick={next}
+              aria-label="Next image"
+              className="absolute right-2 top-1/2 -translate-y-1/2 rounded-full bg-white/80 p-1.5 opacity-0 shadow-sm backdrop-blur-sm transition-opacity group-hover:opacity-100 hover:bg-white"
+            >
+              <ChevronRight className="h-4 w-4 text-bark" />
+            </button>
+            <div className="absolute bottom-16 left-1/2 flex -translate-x-1/2 gap-1.5">
+              {allImages.map((_, i) => (
+                <button
+                  key={i}
+                  onClick={() => setCurrentIndex(i)}
+                  aria-label={`View image ${i + 1}`}
+                  className={`h-1.5 rounded-full transition-all ${
+                    i === currentIndex ? "w-4 bg-white" : "w-1.5 bg-white/50"
+                  }`}
+                />
+              ))}
+            </div>
+          </>
+        )}
+
+        {/* Color swatches */}
+        {product.colors && product.colors.length > 0 && (
+          <div className="absolute right-3 top-3 flex flex-col gap-1.5">
+            {product.colors.map((variant) => (
+              <button
+                key={variant.name}
+                onClick={() => {
+                  setActiveColor(variant.name);
+                  setCurrentIndex(0);
+                }}
+                title={variant.name}
+                className={`h-6 w-6 rounded-full border-2 transition-all ${
+                  activeColor === variant.name
+                    ? "border-cream scale-110"
+                    : "border-transparent hover:border-cream/60"
+                }`}
+                style={{ backgroundColor: variant.color }}
+              />
+            ))}
+          </div>
+        )}
+      </div>
+      <div className="absolute inset-x-0 bottom-0 p-6">
+        <h3 className="font-display text-xl font-semibold text-cream">
+          {product.name}
+        </h3>
+        <p className="mt-1 text-sm text-sand/70 line-clamp-2">
+          {product.description}
+        </p>
+        <a
+          href={WHATSAPP.getProductLink(product.name)}
+          target="_blank"
+          rel="noopener noreferrer"
+          className="mt-3 inline-flex items-center gap-2 rounded-full bg-[#25D366] px-4 py-2 text-sm font-medium text-white transition-all hover:bg-[#20BD5A]"
+        >
+          <MessageCircle className="h-4 w-4" />
+          Enquire Now
+        </a>
+      </div>
+    </div>
+  );
+}
 
 export default function CollectionPage() {
   const [activeCategory, setActiveCategory] = useState("all");
@@ -59,39 +165,10 @@ export default function CollectionPage() {
                 </div>
               </div>
             </FadeIn>
-            <div className="mt-10 grid gap-6 sm:grid-cols-2 lg:max-w-3xl">
+            <div className="mt-10 grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
               {newProducts.map((product) => (
                 <FadeIn key={product.id}>
-                  <div className="group relative overflow-hidden rounded-2xl border border-cream/10">
-                    <div className="relative aspect-[3/4]">
-                      <Image
-                        src={product.image}
-                        alt={product.name}
-                        fill
-                        unoptimized
-                        className="object-cover transition-transform duration-500 group-hover:scale-105"
-                        sizes="(max-width: 640px) 100vw, 50vw"
-                      />
-                      <div className="absolute inset-0 bg-gradient-to-t from-bark/70 via-transparent to-transparent" />
-                    </div>
-                    <div className="absolute inset-x-0 bottom-0 p-6">
-                      <h3 className="font-display text-xl font-semibold text-cream">
-                        {product.name}
-                      </h3>
-                      <p className="mt-1 text-sm text-sand/70 line-clamp-2">
-                        {product.description}
-                      </p>
-                      <a
-                        href={WHATSAPP.getProductLink(product.name)}
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        className="mt-3 inline-flex items-center gap-2 rounded-full bg-[#25D366] px-4 py-2 text-sm font-medium text-white transition-all hover:bg-[#20BD5A]"
-                      >
-                        <MessageCircle className="h-4 w-4" />
-                        Enquire Now
-                      </a>
-                    </div>
-                  </div>
+                  <NewArrivalCard product={product} />
                 </FadeIn>
               ))}
             </div>

@@ -86,8 +86,8 @@ export default function Hero() {
           transition={{ delay: 0.7, duration: 0.6 }}
           className="mx-auto mt-6 max-w-xl text-lg leading-relaxed text-warm-gray sm:text-xl"
         >
-          Fashion that doesn&apos;t harm the planet. Crafted from hemp, bamboo,
-          and banana fabric — dyed by nature, made by hand.
+          ⁠Fashion that doesn&apos;t harm the planet. Crafted from hemp, bamboo, 
+          banana and organic cotton fabric dyed by nature, made by hand.
         </motion.p>
 
         <motion.div
